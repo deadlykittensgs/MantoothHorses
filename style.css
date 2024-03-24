@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-background-color: rgb(101, 83, 4);
+background-color: rgb(95, 83, 26);
 display: flex;
 justify-content: space-between;
 min-height: 80px;
@@ -55,23 +55,16 @@ a:hover {
 
 .boxOne {
     background-color: rgb(198, 159, 108);
-    flex: 1;
+    flex: 2;
     width: 100%;
     display: flex;
     
     
 }
 
-
-
-h1 { 
-    
-}
-
-
 .sectionOneText {
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -99,16 +92,74 @@ h1 {
 }
 
 .boxTwo {
-    flex: 1;
+    flex: 2;
     background-color: rgb(156, 129, 93);
 }
 
-.boxThree {
+.aboutJoel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 10%;
+    font-family: cursive;
+}
+
+.joelPicHolder {
+    display: flex;
+}
+
+.joelPicHolder img {
+    flex: 1 1;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
     flex: 1;
-    background-color: tan;
+    background-color: rgb(236, 187, 127);
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.joelPic {
+    display: flex;
+    flex: 1;
 
 }
 
+
+.boxThree {
+    flex: 1;
+    display: flex;
+    background-color: tan;
+    flex-direction: column;
+   align-items: center;
+}
+.services {
+    margin: 10px; 
+
+}
+.listBox {
+    display: flex;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
 
 .footer {
     background-color: rgb(35, 34, 34);
