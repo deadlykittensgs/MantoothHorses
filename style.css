@@ -1,0 +1,116 @@
+:root {
+    --primary-color:rgb(207, 207, 232);
+    --secondary-color:rgb(220, 198, 1);
+    --bg-Color: #231f20;
+   
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 200ms;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #231f20;
+    
+
+    background-color: var(--bg-Color);
+}
+
+.header {
+background-color: rgb(101, 83, 4);
+display: flex;
+justify-content: space-between;
+min-height: 80px;
+align-items: center;
+padding: 12px;
+
+}
+
+a {
+    padding: 8px;
+    background-color:rgb(13, 30, 187);
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(15, 33, 199);
+    cursor: pointer;
+}
+
+.introName {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: cursive;
+
+}
+
+.boxOne {
+    background-color: rgb(198, 159, 108);
+    flex: 1;
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+
+
+h1 { 
+    
+}
+
+
+.sectionOneText {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.pOnetext {
+    display: flex;
+    width: 70%;
+}
+
+.imgContainer {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: stretch;
+
+}
+
+.imgContainer img {
+    display: flex;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+}
+
+.boxTwo {
+    flex: 1;
+    background-color: rgb(156, 129, 93);
+}
+
+.boxThree {
+    flex: 1;
+    background-color: tan;
+
+}
+
+
+.footer {
+    background-color: rgb(35, 34, 34);
+    min-height: 40px;
+}
