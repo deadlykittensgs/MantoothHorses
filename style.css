@@ -1,8 +1,26 @@
 :root {
-    --primary-color:rgb(207, 207, 232);
-    --secondary-color:rgb(220, 198, 1);
-    --bg-Color: #231f20;
+    --header: rgb(116, 88, 88);
+    --bodyOne:rgb(207, 197, 197);
+    --aboutJoel:  rgb(255, 255, 255);
+    --bodyTwo:  rgb(201, 170, 170);
+    --bodyThree: rgb(112, 112, 112);
+    --footer: rgb(29, 29, 29);
+    --text: rgb(28, 25, 25);
+    --textHeaders: rgb(64, 65, 67);
+    --background:rgb(0, 0, 0);
+    --Aboutjoeltext:rgb(91, 71, 71);
    
+}
+
+/* text  */
+p {
+    color: var(--text);
+}
+
+/* text headers */
+h4, h3, h1 {
+    color: var(--textHeaders);
+
 }
 
 * {
@@ -16,29 +34,35 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
-    background-color: #231f20;
-    
-
-    background-color: var(--bg-Color);
+    background-color: var(--background);
 }
 
 .header {
-background-color: rgb(95, 83, 26);
+background-color: var(--header);
 display: flex;
 justify-content: space-between;
-min-height: 80px;
+min-height: 100px;
 align-items: center;
 padding: 12px;
 
 }
+.facebook {
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
 
 a {
     padding: 8px;
     background-color:rgb(13, 30, 187);
     color: white;
     text-decoration: none;
+    border-radius: 30px;
 }
 
 a:hover {
@@ -54,7 +78,7 @@ a:hover {
 }
 
 .boxOne {
-    background-color: rgb(198, 159, 108);
+    background-color: var(--bodyOne);
     flex: 2;
     width: 100%;
     display: flex;
@@ -76,6 +100,13 @@ a:hover {
     width: 70%;
 }
 
+.ourStory {
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 20px;
+    width: 20%;
+}
+
 .imgContainer {
     display: flex;
     flex: 1;
@@ -91,9 +122,10 @@ a:hover {
     height: 100%;
 }
 
+
 .boxTwo {
     flex: 2;
-    background-color: rgb(156, 129, 93);
+    background-color: var(--bodyThree);
 }
 
 .aboutJoel {
@@ -103,10 +135,16 @@ a:hover {
     font-size: large;
     height: 10%;
     font-family: cursive;
+    background-color: var(--aboutJoel);
+}
+
+.aboutJoelText {
+    color: var(--Aboutjoeltext);
 }
 
 .joelPicHolder {
     display: flex;
+    height: 100%;
 }
 
 .joelPicHolder img {
@@ -114,12 +152,27 @@ a:hover {
     overflow: hidden;
 }
 
+.text h3 {
+    margin-bottom: 40px;
+
+}
+
 .text {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    background-color: rgb(236, 187, 127);
+    background-color: var(--bodyTwo);
     align-items: center;
     justify-content: center;
+}
+
+.btnBox button {
+    margin: 20px;
+}
+.btnBox button {
+    background-color: rgb(171, 171, 171);
+    padding: 13px;
+    border-radius: 30px;
 }
 
 .text p {
@@ -134,34 +187,53 @@ a:hover {
 
 }
 
-
 .boxThree {
     flex: 1;
     display: flex;
-    background-color: tan;
+    background-color:var(--bodyThree);
     flex-direction: column;
    align-items: center;
 }
-.services {
-    margin: 10px; 
 
+.boxThreeContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
+
+
+.listBoxTwo {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.listBoxTwo h4 {
+    justify-self: center;
+    margin: 16px;
+}
+
+
+
 .listBox {
     display: flex;
-
-}
-
-ul {
-    display: flex;
+    flex: 1 1 100%;
     flex-direction: column;
-    margin: 0%;
-    padding: 0%;
     justify-content: center;
-    padding: 20px;
-    padding-bottom: 40px;
+    align-items: center;
 }
+
+
+.listBox h4 {
+    justify-self: center;
+    margin: 16px;
+}
+
 
 .footer {
-    background-color: rgb(35, 34, 34);
+    background-color:var(--footer);
     min-height: 40px;
 }
