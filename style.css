@@ -58,6 +58,9 @@ padding: 12px;
 
 
 a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     padding: 8px;
     background-color:rgb(13, 30, 187);
     color: white;
@@ -74,6 +77,7 @@ a:hover {
     font-size: 1.5em;
     font-weight: 900;
     font-family: cursive;
+    width: auto;
 
 }
 
@@ -105,6 +109,7 @@ a:hover {
     border-radius: 20px;
     padding: 20px;
     width: 20%;
+    min-width: 120px;
 }
 
 .imgContainer {
@@ -153,7 +158,7 @@ a:hover {
 }
 
 .text h3 {
-    margin-bottom: 40px;
+    align-items: center;
 
 }
 
@@ -166,14 +171,20 @@ a:hover {
     justify-content: center;
 }
 
+.text p {
+    margin: 50px;
+}
+
 .btnBox button {
     margin: 20px;
+    flex: 1 1 30px;
 }
-.btnBox button {
-    background-color: rgb(171, 171, 171);
-    padding: 13px;
-    border-radius: 30px;
-}
+
+.contact {
+    margin: 20px;
+    background-color: rgb(106, 191, 130);
+    flex-shrink:1;
+} 
 
 .text p {
     align-items: center;
@@ -216,6 +227,12 @@ a:hover {
     margin: 16px;
 }
 
+.listBoxTwo p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  
+}
 
 
 .listBox {
@@ -232,8 +249,16 @@ a:hover {
     margin: 16px;
 }
 
+.listBox p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+
 
 .footer {
     background-color:var(--footer);
     min-height: 40px;
+    align-content: center;
 }
