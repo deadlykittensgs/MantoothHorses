@@ -1,14 +1,13 @@
 :root {
-    --header: rgb(116, 88, 88);
-    --bodyOne:rgb(207, 197, 197);
+    --header: rgb(0, 0, 0);
+    --bodyOne:rgb(0, 0, 0);
     --aboutJoel:  rgb(255, 255, 255);
-    --bodyTwo:  rgb(201, 170, 170);
-    --bodyThree: rgb(112, 112, 112);
-    --footer: rgb(29, 29, 29);
-    --text: rgb(28, 25, 25);
-    --textHeaders: rgb(64, 65, 67);
+    --bodyThree: rgb(1, 14, 47);
+    --footer: rgb(11, 2, 48);
+    --text: rgb(255, 255, 255);
+    --textHeaders: rgb(253, 194, 0);
     --background:rgb(0, 0, 0);
-    --Aboutjoeltext:rgb(91, 71, 71);
+  
    
 }
 
@@ -45,15 +44,32 @@ display: flex;
 justify-content: space-between;
 min-height: 100px;
 align-items: center;
-padding: 12px;
+padding: 8px;
+border-bottom: 1px solid white;
+
 
 }
+
+.logoContainer {
+    margin: 20px;
+    height: 100px;
+    max-width: 80px;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+.logoContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+
 .facebook {
     display: flex;
     flex-shrink: 1;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -78,6 +94,7 @@ a:hover {
     font-weight: 900;
     font-family: cursive;
     width: auto;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -92,11 +109,17 @@ a:hover {
 
 .sectionOneText {
     display: flex;
-    flex: 2;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
+}
+
+h1 {
+    text-align:center;
+    padding-top: 20px;
+    color: ;
 }
 
 .pOnetext {
@@ -105,7 +128,7 @@ a:hover {
 }
 
 .ourStory {
-    background-color: bisque;
+    background-color: rgb(60, 114, 67);
     border-radius: 20px;
     padding: 20px;
     width: 20%;
@@ -113,66 +136,78 @@ a:hover {
 }
 
 .imgContainer {
+    padding: 0px 20px ;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
-    align-items: stretch;
-    justify-content: stretch;
 
 }
 
 .imgContainer img {
-    display: flex;
-    aspect-ratio: 1/1;
+   object-fit: scale-down;
+   flex: 1;
     width: 100%;
     height: 100%;
 }
 
-
-.boxTwo {
-    flex: 2;
-    background-color: var(--bodyThree);
-}
 
 .aboutJoel {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: large;
-    height: 10%;
+    max-height: 10%;
     font-family: cursive;
     background-color: var(--aboutJoel);
 }
 
-.aboutJoelText {
-    color: var(--Aboutjoeltext);
-}
 
-.joelPicHolder {
+
+.boxTwo {
+    flex: 2;
     display: flex;
-    height: 100%;
-}
-
-.joelPicHolder img {
-    flex: 1 1;
-    overflow: hidden;
-}
-
-.text h3 {
+    justify-content: center;
     align-items: center;
+    background-image: url(https://scontent.fath5-1.fna.fbcdn.net/v/t39.30808-6/323704188_1344313576383291_1839900434758790629_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WnjxZ_9qy00Ab7jdbrN&_nc_ht=scontent.fath5-1.fna&oh=00_AfAJEKtXU3MOusNUyDWX-vrNypGEaD4dOoXKoog-AxWnBQ&oe=6614C77F);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 
+
+.floatHolder {
+    display: flex;
+    width: 80%;
+    height: 70%;
+  background-color: rgba(160, 121, 93, 0.831);
+ 
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    background-color: var(--bodyTwo);
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+}
+
+.text h3 {
+    align-items: center;
+    color: rgb(255, 255, 255);
+
 }
 
 .text p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
     margin: 50px;
+
+}
+
+.btnBox {
+    display: flex;
 }
 
 .btnBox button {
@@ -182,21 +217,17 @@ a:hover {
 
 .contact {
     margin: 20px;
-    background-color: rgb(106, 191, 130);
+    background-color: rgb(194, 154, 23);
     flex-shrink:1;
 } 
 
-.text p {
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
 
-.joelPic {
-    display: flex;
-    flex: 1;
 
-}
+
+
+
+
+
 
 .boxThree {
     flex: 1;
@@ -219,6 +250,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 
@@ -244,6 +276,8 @@ a:hover {
 }
 
 
+
+
 .listBox h4 {
     justify-self: center;
     margin: 16px;
@@ -256,9 +290,12 @@ a:hover {
 }
 
 
-
 .footer {
     background-color:var(--footer);
-    min-height: 40px;
+    min-height: 80px;
     align-content: center;
+}
+
+.footer p {
+   font-weight: 200;
 }
