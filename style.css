@@ -1,6 +1,6 @@
 :root {
     --header: rgb(0, 0, 0);
-    --bodyOne:rgb(0, 0, 0);
+    --bodyOne:rgb(25, 23, 32);
     --aboutJoel:  rgb(255, 255, 255);
     --bodyThree: rgb(1, 14, 47);
     --footer: rgb(11, 2, 48);
@@ -119,7 +119,7 @@ a:hover {
 h1 {
     text-align:center;
     padding-top: 20px;
-    color: ;
+    color: goldenrod;
 }
 
 .pOnetext {

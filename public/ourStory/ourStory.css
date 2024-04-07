@@ -1,0 +1,69 @@
+
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 200ms;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(11, 2, 48);
+}
+header div {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex: 1 1 100%;
+   background-color: rgb(224, 215, 204);
+   color: rgb(0, 0, 0);
+}
+.textBody {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: flex;
+    flex: 3 1 100%;
+    align-items: center;
+    
+}
+text p {
+    display: flex;
+    flex: 1;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+.textBody button {
+    background-color: rgb(86, 83, 40);
+    padding: 30px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin: 30px;
+}
+.sideboard {
+    flex: 2 1 20%;
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.FB-6m5Kkm5zS7rJjPlmdRgHaE8&pid=Api&P=0&h=220);
+
+  
+}
+
