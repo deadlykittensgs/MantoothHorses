@@ -1,6 +1,6 @@
 :root {
     --header: rgb(0, 0, 0);
-    --bodyOne:rgb(25, 23, 32);
+    --bodyOne:rgb(6, 1, 25);
     --aboutJoel:  rgb(255, 255, 255);
     --bodyThree: rgb(1, 14, 47);
     --footer: rgb(11, 2, 48);
@@ -169,7 +169,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://scontent.fath5-1.fna.fbcdn.net/v/t39.30808-6/323704188_1344313576383291_1839900434758790629_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WnjxZ_9qy00Ab7jdbrN&_nc_ht=scontent.fath5-1.fna&oh=00_AfAJEKtXU3MOusNUyDWX-vrNypGEaD4dOoXKoog-AxWnBQ&oe=6614C77F);
+    background-image: url(/public/joel.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
